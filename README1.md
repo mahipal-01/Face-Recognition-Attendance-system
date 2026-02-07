@@ -100,8 +100,8 @@ python main.py
 Attendance records are stored in `attendance.csv` with the following format:
 
 ```csv
-Name, Date, Time, Status
-John Doe, 2024-02-07, 09:15:23, Present
+Name, Date, INTIME, OUTTIME
+John , 2024-02-07, 09:15:23, 09:20:33
 ```
 
 ## 🔒 Liveness Detection
@@ -167,7 +167,7 @@ You can modify the following parameters in the code:
 ## 🐛 Troubleshooting
 
 **Camera not opening:**
-- Check if camera is properly connected
+- Check if the camera is properly connected
 - Try changing camera index: `cv2.VideoCapture(1)` or `cv2.VideoCapture(2)`
 - Ensure no other application is using the camera
 
@@ -193,19 +193,8 @@ You can modify the following parameters in the code:
 - Clean the `faces/` directory periodically to remove old/unused entries
 - Backup `attendance.csv` regularly
 
-## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
 
 ## 👨‍💻 Author
 
@@ -218,7 +207,7 @@ This project is open-source and available under the MIT License.
 - MediaPipe for face detection and landmarks
 - OpenCV community for computer vision tools
 
-## 📧 Contact
+
 
 For questions, suggestions, or issues, please open an issue on the GitHub repository.
 
